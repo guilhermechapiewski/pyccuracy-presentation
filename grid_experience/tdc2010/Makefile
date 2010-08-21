@@ -1,6 +1,8 @@
 root_dir=.
 browser="firefox"
 pattern="*"
+number_of_workers=1
+port=5555
 
 selenium_up:
 	@echo "===================="
@@ -21,6 +23,22 @@ wait:
 	@echo "Waiting..."
 	@echo "=========="
 	@sleep 10
+
+kill_workers:
+	@echo "Killing workers from port $(begin) to $(end)..."
+	@kill `lsof -t -i :$(begin)-$(end)`
+	@echo "Killed."
+
+hub:
+	@echo "Launching Selenium Grid..."
+	@ant -f lib/selenium-grid-1.0.8/build.xml launch-hub 2> /dev/null > /dev/null &
+	@echo "Grid launched."
+
+run_worker:
+	@ant -f lib/selenium-grid-1.0.8/build.xml -Dport $(port) -Denvironment *$(browser) launch-remote-control 2> /dev/null > /dev/null &
+
+workers:
+	@for ((a=$(port); a<($(port)+$(number_of_workers)); a++)) do echo "Launching worker (port=$$a, browser=$(browser))..." && make run_worker port=$$a; done
 
 acceptance:
 	@make selenium_up
