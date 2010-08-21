@@ -1,0 +1,100 @@
+Como um palestrante da TDC 2010
+Eu quero demonstrar o funcionamento do Pyccuracy com grid
+Para que os desenvolvedores possam rodar seus testes de maneira mais eficiente
+
+Cenário 1 - Acessando a Página Rápida
+Dado que
+    Eu navego para Pagina Rapida
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok fast"
+
+Cenário 2 - Acessando a Página Lenta
+Dado que
+    Eu navego para Pagina Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slow"
+
+Cenário 3 - Acessando a Página Mais Lenta
+Dado que
+    Eu navego para Pagina Mais Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slower"
+
+Cenário 4 - Acessando a Página Rápida
+Dado que
+    Eu navego para Pagina Rapida
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok fast"
+
+Cenário 5 - Acessando a Página Lenta
+Dado que
+    Eu navego para Pagina Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slow"
+
+Cenário 6 - Acessando a Página Mais Lenta
+Dado que
+    Eu navego para Pagina Mais Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slower"
+
+Cenário 7 - Acessando a Página Rápida
+Dado que
+    Eu navego para Pagina Rapida
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok fast"
+
+Cenário 8 - Acessando a Página Lenta
+Dado que
+    Eu navego para Pagina Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slow"
+
+Cenário 9 - Acessando a Página Mais Lenta
+Dado que
+    Eu navego para Pagina Mais Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slower"
+
+Cenário 10 - Acessando a Página Rápida
+Dado que
+    Eu navego para Pagina Rapida
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok fast"
+
+Cenário 11 - Acessando a Página Lenta
+Dado que
+    Eu navego para Pagina Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slow"
+
+Cenário 12 - Acessando a Página Mais Lenta
+Dado que
+    Eu navego para Pagina Mais Lenta
+Quando
+    #A página termina de carregar
+Então
+    Eu vejo que a página atual contém "ok slower"
+
