@@ -1,0 +1,7 @@
+make hub
+make workers number_of_workers=6 browser=safari
+
+gunicorn_django -w 6
+
+
+make kill_workers begin=5555 end=5560

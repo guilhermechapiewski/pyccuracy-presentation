@@ -41,8 +41,8 @@ workers:
 	@for ((a=$(port); a<($(port)+$(number_of_workers)); a++)) do echo "Launching worker (port=$$a, browser=$(browser))..." && make run_worker port=$$a; done
 
 acceptance:
-	@make selenium_up
-	@make wait
+	#@make selenium_up
+	#@make wait
 	@echo "================="
 	@echo "Starting tests..."
 	@echo "================="
